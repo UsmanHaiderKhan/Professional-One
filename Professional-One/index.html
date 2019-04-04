@@ -13,6 +13,7 @@
     <link href="assets/Bootstrap4/LightBox/dist/css/lightbox.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/jquery-ui.css" rel="stylesheet" />
     <link href="assets/font/flaticon.css" rel="stylesheet" />
+    <link href="assets/Bootstrap4/css/floating.labels.min.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/styles.css" rel="stylesheet" />
     <title>Professional Theme | One</title>
 </head>
@@ -547,23 +548,19 @@
                         <form action="/" method="post">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="group">
-                                        <input class="inputMaterial" type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label class="label-style">Name</label>
+                                    <div class="form-group floating-control-group">
+                                        <label for="name" class="label-style">Name</label>
+                                        <input type="text" class="form-control" required="">
                                     </div>
-                                    <div class="group">
-                                        <input class="inputMaterial" type="text" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label class="label-style">Email</label>
+                                    <div class="form-group floating-control-group mt-48">
+                                        <label for="email" class="label-style">Email</label>
+                                        <input type="email" class="form-control inpu" required="">
                                     </div>
-                                    <div class="form-group mt-5">
-                                        <p for="text" class="label-style">Message</p>
-                                        <textarea type="email" name="text" id="message" rows="5" class="text-area" required></textarea>
+                                    <div class="form-group mt-48">
+                                        <label for="message" class="label-style">Message</label>
+                                        <textarea class="form-control text-area" rows="5" required=""></textarea>
                                     </div>
-                                    <div class="">
+                                    <div class="mt-60">
                                         <button type="submit" class="btn btn-send">Send Message</button>
                                     </div>
                                 </div>
@@ -653,6 +650,7 @@
     <script src="assets/Bootstrap4/js/smoothscroll.js"></script>
     <script src="assets/Bootstrap4/js/scrollinToview.js"></script>
     <script src="assets/Bootstrap4/js/wow.min.js"></script>
+    <script src="assets/Bootstrap4/js/floating.labels.min.js"></script>
     <script src="assets/Bootstrap4/js/script.js"></script>
     <script type="text/javascript">new WOW().init();</script>
 </body>
