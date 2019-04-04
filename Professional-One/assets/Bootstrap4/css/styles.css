@@ -809,7 +809,7 @@ html, body {
 }
 
 .contact-bg-color {
-    padding: 90px 58px;
+    padding: 78px 58px;
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
@@ -836,6 +836,7 @@ html, body {
 .text-area {
     width: 100%;
     padding: 15px;
+    resize: none;
     border: 2px solid #dddddd;
 }
 
@@ -845,122 +846,10 @@ html, body {
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
 }
-/*Floating Input fields*/
-#contact .group {
-    position: relative;
-    margin-bottom: 35px;
+
+#contact .floating-input {
+    border-bottom: 2px solid #e5e5e5 !important;
 }
-
-#contact .inputMaterial {
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid #c9c9c9;
-}
-
-    #contact .inputMaterial:focus {
-        outline: none;
-    }
-/* LABEL ======================================= */
-
-#contact label {
-    color: #afafaf;
-    font-size: 20px;
-    font-weight: 400;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-/* active state */
-#contact .inputMaterial:focus ~ label, .inputMaterial:valid ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: #afafaf;
-}
-
-/* BOTTOM BARS ================================= */
-#contact .bar {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-    #contact .bar:before, .bar:after {
-        content: '';
-        height: 2px;
-        width: 0;
-        bottom: 1px;
-        position: absolute;
-        background: #c9c9c9;
-        transition: 0.2s ease all;
-        -moz-transition: 0.2s ease all;
-        -webkit-transition: 0.2s ease all;
-    }
-
-    #contact .bar:before {
-        left: 50%;
-    }
-
-    #contact .bar:after {
-        right: 50%;
-    }
-
-/* active state */
-#contact .inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
-    width: 50%;
-}
-
-
-/* active state */
-#contact .inputMaterial:focus ~ .highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-    from {
-        background: #c9c9c9;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@-moz-keyframes inputHighlighter {
-    from {
-        background: #c9c9c9;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@keyframes inputHighlighter {
-    from {
-        background: #c9c9c9;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
 /*================================= 
      Footer section Styling
   =================================*/
@@ -1660,6 +1549,9 @@ button:focus {
 .list-styling {
     list-style: none;
 }
+
+
+
 /*================ Media Query ===============*/
 @media screen and (max-width: 1500px) {
 }
