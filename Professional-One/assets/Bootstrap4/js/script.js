@@ -3,9 +3,9 @@
 /*================== Read More Text ==================*/
 
 $(function () {
-    var showChar = 200;
-    var moretext = "Read More";
-    var lesstext = "Read Less";
+    var showChar = 210;
+    var moretext = "Know More";
+    var lesstext = "Know Less";
     $('.comments-space').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
@@ -15,9 +15,10 @@ $(function () {
                 '<span class="remaining-contents"><span class=" p-3">' +
                 hide_content +
                 '</span>' +
-                '<a href="" class="morelinksss btn btn-view-more" style="display:block; margin-top:30px">' +
+                '<div class="text-center ml-37 media-ml-33">' +
+                '<a href="" class="morelinksss text-center btn btn-know" style="display:block; margin-top:40px">' +
                 moretext +
-                '</a>' + '</span>';;
+                '</a>' + '</div>' + '</span>';;
 
             $(this).html(html);
         }
