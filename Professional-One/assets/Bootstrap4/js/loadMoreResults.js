@@ -26,8 +26,8 @@
             displayedItems: 4,
             showItems: 4,
             button: {
-                'class': 'btn-load-more mt-70',
-                text: 'Load More'
+                'class': 'btn-load-more mt-50',
+                text: 'View More'
             }
         };
 
