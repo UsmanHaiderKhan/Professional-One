@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 @font-face {
@@ -36,7 +36,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
 */
-/*================================= 
+/*=================================
         Font-Family's End
   =================================*/
 
@@ -50,7 +50,7 @@ html, body {
 }
 
 
-/*================================= 
+/*=================================
     Navbar Section Styling
   =================================*/
 .full-bg-banner {
@@ -59,11 +59,11 @@ html, body {
     background-repeat: no-repeat;
 }
 
-#home .navbar {
+.navbar {
     padding: 0;
 }
 
-#home .active .nav-link {
+.active .nav-link {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     color: #ffffff !important;
@@ -76,7 +76,7 @@ html, body {
 
 
 
-#home .nav-bg-color {
+.nav-bg-color {
     background-color: #282828;
 }
 
@@ -94,7 +94,7 @@ html, body {
     transition: all 0.6s ease-in-out;
 }
 
-#home .nav-item {
+.nav-item {
     padding: 0 8px 0 8px;
     position: relative;
 }
@@ -116,7 +116,7 @@ html, body {
     transition: all .5s ease-in-out;
 }
 
-#home .navbar-nav .nav-link {
+.navbar-nav .nav-link {
     color: #f2f2f2;
     font-size: 19px;
     padding: 35px 17px 5px 17px;
@@ -133,10 +133,12 @@ html, body {
 
 .main-bg-banner {
     position: relative;
-    padding: 0px 0;
+    z-index: 99;
+    background-color: #f4f5f9;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
 }
 
 #home .main-banner-text {
@@ -170,6 +172,9 @@ html, body {
     -ms-transform: matrix( 1.00047630097336,0,0,1.00158397414057,0,0);
 }
 
+.content-setting {
+    padding: 230px 0 0 0;
+}
 
 .btn-know {
     width: 154px;
@@ -211,44 +216,19 @@ html, body {
         color: #fafcfe;
     }
 
-
-
-#home .left-border {
-    border-left-color: #f4f5f9 !important;
-    border-left-width: 1580px !important;
-    border-top-width: 370px !important;
-    left: 0;
-}
-
-#home .right-border {
-    border-right-color: #f4f5f9 !important;
-    border-right-width: 1580px !important;
-    border-top-width: 370px !important;
-    right: 0;
-}
-
-#home .borders {
-    background: none;
-    border: 0 solid transparent;
-    height: 0;
-    position: absolute;
-    top: 81%;
-    width: 0;
-}
-
 .navbar-toggler {
     border: 1px solid #fff;
 }
 
-/*================================= 
+/*=================================
     About Section Styling
   =================================*/
 
 
 
 #skill {
-    z-index: 222;
-    padding: 80px 0 0px 0;
+    margin-top: -133px;
+    padding: 210px 0 153px 0;
     position: relative;
     width: 100%;
     background: #f4f5f9;
@@ -298,6 +278,49 @@ html, body {
     font-size: 44px;
     margin-left: 0px;
     color: #e74c3c;
+    display: flex;
+}
+
+#skill .flaticon-idea:before {
+    content: "\f102";
+    margin-left: 13px !important;
+}
+
+#skill #hover-area:hover .flaticon-idea:before {
+    transform: rotate(-145deg);
+    left: 9px !important;
+    top: 21px;
+    position: absolute;
+}
+
+.flaticon-like:before {
+    content: "\f101";
+    margin-left: 7px !important;
+}
+
+#skill #hover-area:hover .flaticon-like:before {
+    transform: rotate(-145deg);
+    position: absolute;
+}
+
+#skill .flaticon-eyeglasses:before {
+    content: "\f100";
+    margin-left: 7px !important;
+}
+
+#skill #hover-area:hover .flaticon-eyeglasses:before {
+    transform: rotate(-145deg);
+    position: absolute;
+}
+
+#skill .flaticon-talk:before {
+    content: "\f103";
+    margin-left: 8px !important;
+}
+
+#skill #hover-area:hover .flaticon-talk:before {
+    transform: rotate(-145deg);
+    position: absolute;
 }
 
 #skill #hover-area:hover .skill-heading {
@@ -308,6 +331,8 @@ html, body {
     border: 2px solid #e74c3c;
     transition: all 0.4s ease-in-out;
     transform: rotate(145deg);
+    width: 110px;
+    height: 110px;
 }
 
 .flaticon-eyeglasses:hover:before {
@@ -356,39 +381,17 @@ html, body {
     text-transform: uppercase;
     box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
 }
-
-#skill .left-border {
-    border-left-color: #f4f5f9 !important;
-    border-left-width: 1615px !important;
-    border-top-width: 370px !important;
-    left: 0;
-}
-
-#skill .right-border {
-    border-right-color: #f4f5f9 !important;
-    border-right-width: 1612px !important;
-    border-top-width: 370px !important;
-    right: 0;
-}
-
-#skill .borders {
-    background: none;
-    border: 0 solid transparent;
-    height: 0;
-    position: absolute;
-    top: 67%;
-    width: 0;
-}
-
-/*================================= 
+/*=================================
       Work Section Styling
   =================================*/
 #work {
-    position: relative;
-    padding: 342px 0 223px 0;
+    margin-top: -175px;
+    padding: 242px 0 150px 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    clip-path: polygon(50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+    /*clip-path: polygon(50% 25%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);*/
 }
 
 
@@ -412,9 +415,6 @@ html, body {
         left: 43%;
         bottom: -14px;
     }
-
-.border-position {
-}
 
 .containing {
     position: relative;
@@ -468,49 +468,9 @@ html, body {
     text-decoration: none;
 }
 
-#work .left-border {
-    border-left-color: #ffffff !important;
-    border-left-width: 1615px !important;
-    border-top-width: 370px !important;
-    left: 0;
-}
 
 
-
-#work .right-border {
-    border-right-color: #ffffff !important;
-    border-right-width: 1612px !important;
-    border-top-width: 370px !important;
-    right: 0;
-}
-
-#work .borders {
-    background: none;
-    border: 0 solid transparent;
-    height: 0;
-    position: absolute;
-    top: 86%;
-    width: 0;
-}
-
-#work .top-border {
-    border-right-color: #f4f5f9 !important;
-    border-right-width: 1612px !important;
-    border-top-width: 268px !important;
-    top: -108px;
-    left: 49%;
-    transform: rotate(170.9deg);
-}
-
-#work .bottom-border {
-    border-left-color: #f4f5f9 !important;
-    border-left-width: 1623px !important;
-    border-top-width: 268px !important;
-    top: -94px;
-    right: 46.7%;
-    transform: rotate(188deg);
-}
-/*================================= 
+/*=================================
     Service Section Styling
   =================================*/
 
@@ -580,76 +540,16 @@ html, body {
 
 
 
-/*================================= 
+/*=================================
         Team Section Styling
   =================================*/
-
-
-
-
-
-
 #team {
-    position: relative;
     padding: 175px 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    clip-path: polygon(50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
 }
-
-    #team .left-border {
-        border-left-color: #f4f5f9 !important;
-        border-left-width: 1615px !important;
-        border-top-width: 370px !important;
-        left: 0;
-    }
-
-
-
-    #team .right-border {
-        border-right-color: #f4f5f9 !important;
-        border-right-width: 1612px !important;
-        border-top-width: 370px !important;
-        right: 0;
-    }
-
-    #team .borders {
-        background: none;
-        border: 0 solid transparent;
-        height: 0;
-        position: absolute;
-        top: 86%;
-        width: 0;
-    }
-
-
-    #team .top-border {
-        border-right-color: #ffffff !important;
-        border-right-width: 1612px !important;
-        border-right-style: inherit;
-        border-top-width: 268px !important;
-        top: -101px;
-        left: 49.6%;
-        transform: rotate(178.9deg);
-    }
-
-
-    #team .bottom-border {
-        border-left-color: #ffffff !important;
-        border-left-width: 1623px !important;
-        border-left-style: inherit;
-        border-top-width: 268px !important;
-        top: -106px;
-        right: 49.9%;
-        transform: rotate(181.1deg);
-    }
-
-    #team .team-hr-line {
-        border-bottom: 1px solid #e6e8ea;
-        width: 100%;
-        bottom: -192px;
-        position: absolute
-    }
 
 .below-team {
     position: relative;
@@ -731,11 +631,40 @@ html, body {
     color: #00aced;
     margin-left: 0;
 }
-/*================================= 
+/*=================================
      Contact Section Styling
   =================================*/
+.team-hr-line {
+    border-bottom: 1px solid #e5e7ea;
+    width: 100%;
+    bottom: 48px;
+    position: absolute
+}
+
+@supports (-ms-ime-align:auto) {
+    #contact {
+        margin-top: 0px !important;
+        padding: 100px 0 100px 0 !important;
+    }
+
+    .team-hr-line {
+        display: none;
+    }
+
+    #work {
+        margin-top: 0 !important;
+        padding: 342px 0 150px 0 !important;
+    }
+
+    #skill {
+        margin-top: 0 !important;
+        padding: 110px 0 103px 0;
+    }
+}
+
 #contact {
-    padding: 100px 0;
+    margin-top: -148px;
+    padding: 215px 0 100px 0;
     background: #f4f5f9;
     width: 100%;
 }
@@ -850,15 +779,18 @@ html, body {
 #contact .floating-input {
     border-bottom: 2px solid #e5e5e5 !important;
 }
-/*================================= 
+/*=================================
      Footer section Styling
   =================================*/
 #footer-section {
-    position: relative;
+    margin-top: -114px;
     padding: 122px 0 50px 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: transparent;
+    clip-path: polygon(50% 19%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    /*clip-path: polygon(50% 16%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);*/
 }
 
     #footer-section .borders {
@@ -868,26 +800,6 @@ html, body {
         position: absolute;
         top: 86%;
         width: 0;
-    }
-
-
-    #footer-section .top-border {
-        border-right-color: #f4f5f9 !important;
-        border-right-width: 1612px !important;
-        border-top-width: 268px !important;
-        top: -92px;
-        left: 49.6%;
-        transform: rotate(178.9deg);
-    }
-
-
-    #footer-section .bottom-border {
-        border-left-color: #f4f5f9 !important;
-        border-left-width: 1623px !important;
-        border-top-width: 268px !important;
-        top: -92px;
-        right: 49.9%;
-        transform: rotate(181.1deg);
     }
 
     #footer-section .nav-link {
@@ -1030,7 +942,7 @@ html, body {
     content: "\f112";
     margin-left: 0;
 }
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 .comments-space {
@@ -1584,14 +1496,6 @@ button:focus {
         font-size: 32px;
     }
 
-    #work .bottom-border {
-        right: 47.5%;
-    }
-
-    #work .top-border {
-        left: 47%;
-    }
-
     .mt-100 {
         margin-top: 20px;
     }
@@ -1656,16 +1560,6 @@ button:focus {
 
     .media-service-mt {
         margin-top: 60px;
-    }
-
-    #work .bottom-border {
-        right: 47.5%;
-        top: -111px;
-    }
-
-    #work .top-border {
-        top: -125px;
-        left: 46%;
     }
 
     .work-text {
@@ -1774,16 +1668,6 @@ button:focus {
         margin-top: 60px;
     }
 
-    #work .bottom-border {
-        right: 46.5%;
-        top: -111px;
-    }
-
-    #work .top-border {
-        top: -125px;
-        left: 46%;
-    }
-
     .work-text {
         font-size: 30px;
     }
@@ -1853,7 +1737,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .mt-200 {
         margin-top: 84px;
     }
@@ -1886,14 +1770,9 @@ button:focus {
         margin-top: 0px;
     }
 
-    #work .bottom-border {
-        right: 46.5%;
-        top: -111px;
-    }
-
-    #work .top-border {
-        top: -125px;
-        left: 46%;
+    #skill {
+        margin-top: -121px;
+        padding: 161px 0 153px 0;
     }
 
     .work-text {
@@ -1901,7 +1780,7 @@ button:focus {
     }
 
     #work {
-        padding: 342px 0 310px 0;
+        padding: 230px 0 300px 0;
     }
 
     .mt-100 {
@@ -1932,14 +1811,6 @@ button:focus {
             margin-left: 16%;
         }
 
-    .team-hr-line {
-        border-bottom: 1px solid #e6e8ea;
-        width: 100%;
-        bottom: -132px;
-        position: absolute;
-    }
-
-
     .team-text {
         font-size: 28px;
     }
@@ -1949,7 +1820,7 @@ button:focus {
     }
 
     #contact {
-        padding: 0;
+        padding: 213px 0 111px 0;
     }
 
     .keep-text {
@@ -2004,16 +1875,7 @@ button:focus {
         padding: 0px 0 0px 0;
     }
 
-    #work .top-border {
-        top: -264px;
-        left: 42.6%;
-    }
 
-    #work .bottom-border {
-        right: 42.1%;
-        top: -250px;
-        transform: rotate(189deg);
-    }
 
     .btn-browse {
         font-size: 13px;
@@ -2034,15 +1896,7 @@ button:focus {
             top: 97%;
         }
 
-        #work .right-border {
-            border-right-width: 712px !important;
-            border-top-width: 170px !important;
-        }
 
-        #work .left-border {
-            border-left-width: 730px !important;
-            border-top-width: 170px !important;
-        }
 
     .our-text {
         font-size: 27px;
@@ -2064,34 +1918,6 @@ button:focus {
         width: 18%;
     }
 
-    #team .top-border {
-        border-right-width: 0 !important;
-        border-top-width: 0px !important;
-        top: 0;
-    }
-
-    #team .bottom-border {
-        border-left-width: 0 !important;
-        border-top-width: 0px !important;
-        top: 0;
-    }
-
-    #team .left-border {
-        border-left-width: 0 !important;
-        border-top-width: 0px !important;
-        top: 0;
-    }
-
-    #team .right-border {
-        border-right-width: 0 !important;
-        border-top-width: 0px !important;
-        top: 0;
-    }
-
-    #team .borders {
-        position: center;
-        top: 0;
-    }
 
     #team .media-team-ml {
         margin-left: 32%;
@@ -2140,24 +1966,6 @@ button:focus {
 
     .contact-bg-color {
         padding: 44px 23px;
-    }
-
-    #footer-section .top-border {
-        border-right-color: #f4f5f9 !important;
-        border-right-width: 0 !important;
-        border-top-width: 0 !important;
-        top: 0;
-        left: 0;
-        transform: rotate(178.9deg);
-    }
-
-    #footer-section .bottom-border {
-        border-left-color: #f4f5f9 !important;
-        border-left-width: 0px !important;
-        border-top-width: 0px !important;
-        top: 0px;
-        right: 0%;
-        transform: rotate(181.1deg);
     }
 
     #footer-section {

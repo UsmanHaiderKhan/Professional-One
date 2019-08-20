@@ -18,45 +18,44 @@
     <title>Professional Theme | One</title>
 </head>
 <body>
-    <section id="home" class="main-bg-banner" style="background-image: url('assets/Images/main-banner.png');">
-        <div class="borders left-border"></div>
-        <div class="borders right-border"></div>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/Images/logo.png" class="img-fluid media-logo-width" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto text-center">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll" href="#skill">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll" href="#work">Work</a>
-                        </li>
-                        <!--<li class="nav-item">
-                            <a class="nav-link scroll" href="#team">Team</a>
-                        </li>-->
-                        <li class="nav-item">
-                            <a class="nav-link scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+
+    <nav id="nab" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/Images/logo.png" class="img-fluid media-logo-width" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#skill">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#work">Work</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link scroll" href="#team">Team</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <section id="home" class="main-bg-banner" style="background-image: url('assets/Images/main-banner.png');">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
-                    <div class="mt-200">
+                    <div class="content-setting">
                         <h2 class="main-banner-text">Be Original, Be Creative</h2>
                         <p class="banner-sub-text text-center comments-space mt-35">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -67,7 +66,7 @@
                     <!--<div class="mt-40">
                         <a href="#contact" class="btn btn-know">Know More</a>
                     </div>-->
-                    <div class="mt-260">
+                    <div class="mt-200">
                         <a href="#skill" class="link-style">
                             <img src="assets/Images/scroll.png" class="animated bounce infinite" />
                             <p class="scroll-text mb-5">
@@ -80,8 +79,8 @@
         </div>
     </section>
     <section id="skill">
-        <div class="borders left-border"></div>
-        <div class="borders right-border"></div>
+        <!--<div class="borders left-border"></div>
+        <div class="borders right-border"></div>-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center" id="hover-area">
@@ -141,11 +140,11 @@
             </div>
         </div>
     </section>
-    <section id="work" style="background-image: url('assets/Images/gallery-bg.png');">
-        <div class="borders bottom-border media-borders"></div>
+    <section id="work" style="background-image: url('assets/Images/gallery-banner.png');">
+        <!--<div class="borders bottom-border media-borders"></div>
         <div class="borders top-border media-borders"></div>
         <div class="borders left-border"></div>
-        <div class="borders right-border"></div>
+        <div class="borders right-border"></div>-->
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
@@ -381,10 +380,10 @@
         </div>
     </section>
     <section id="team" style="background-image: url('assets/Images/team-banner.png');">
-        <div class="borders bottom-border"></div>
+        <!--<div class="borders bottom-border"></div>
         <div class="borders top-border"></div>
         <div class="borders left-border"></div>
-        <div class="borders right-border"></div>
+        <div class="borders right-border"></div>-->
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center mt-65">
@@ -499,11 +498,12 @@
                 </div>
             </div>
         </div>
-        <div class="position-relative">
-            <hr sty class="team-hr-line" />
-        </div>
+
     </section>
     <section id="contact">
+        <div class="position-relative">
+            <hr sty class="team-hr-line" style="z-index: 0" />
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
@@ -544,36 +544,38 @@
                     </div>
                 </div>
                 <div class="col-lg-7 media-contact-mt">
-                    <div class="contact-bg-color">
-                        <form action="/" method="post">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group floating-control-group">
-                                        <label for="name" class="label-style">Name</label>
-                                        <input type="text" class="form-control" required="">
-                                    </div>
-                                    <div class="form-group floating-control-group mt-48">
-                                        <label for="email" class="label-style">Email</label>
-                                        <input type="email" class="form-control" required="">
-                                    </div>
-                                    <div class="form-group mt-48">
-                                        <label for="message" class="label-style">Message</label>
-                                        <textarea class="form-control text-area" rows="5" required=""></textarea>
-                                    </div>
-                                    <div class="mt-60">
-                                        <button type="submit" class="btn btn-send">Send Message</button>
+                    <div>
+                        <div class="contact-bg-color">
+                            <form action="/" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group floating-control-group">
+                                            <label for="name" class="label-style">Name</label>
+                                            <input type="text" class="form-control" required="">
+                                        </div>
+                                        <div class="form-group floating-control-group mt-48">
+                                            <label for="email" class="label-style">Email</label>
+                                            <input type="email" class="form-control" required="">
+                                        </div>
+                                        <div class="form-group mt-48">
+                                            <label for="message" class="label-style">Message</label>
+                                            <textarea class="form-control text-area" rows="5" required=""></textarea>
+                                        </div>
+                                        <div class="mt-60">
+                                            <button type="submit" class="btn btn-send">Send Message</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="footer-section" style="background-image: url('assets/Images/footer-banner.png');">
-        <div class="borders bottom-border"></div>
-        <div class="borders top-border"></div>
+        <!--<div class="borders bottom-border"></div>
+        <div class="borders top-border"></div>-->
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center mt-120">
@@ -582,7 +584,7 @@
             </div>
             <div class="row mt-80">
                 <div class="col-md-12">
-                    <nav class="navbar navbar-expand-sm navbar-dark">
+                    <nav class="navbar navbar-expand-sm">
                         <div class="container">
                             <ul class="navbar-nav mr-auto ml-auto text-center">
                                 <li class="nav-item">

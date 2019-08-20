@@ -204,10 +204,10 @@ $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll >= 100) {
-            $("#home nav").addClass("fixed-top sleep nav-bg-color");
+            $("#nab").addClass("sleep nav-bg-color");
 
         } else {
-            $("#home nav").removeClass("fixed-top sleep nav-bg-color");
+            $("#nab").removeClass(" sleep nav-bg-color");
 
 
         }
