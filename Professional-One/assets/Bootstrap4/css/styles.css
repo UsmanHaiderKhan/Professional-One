@@ -1529,7 +1529,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width:993px) {
     .mt-200 {
         margin-top: 84px;
     }
@@ -1611,7 +1611,8 @@ button:focus {
     }
 
     #contact {
-        padding: 0;
+        margin-top: -218px;
+        padding: 289px 0 94px 0;
     }
 
     .keep-text {
@@ -1713,7 +1714,8 @@ button:focus {
     }
 
     #contact {
-        padding: 0;
+        margin-top: -218px;
+        padding: 289px 0 94px 0;
     }
 
     .keep-text {
@@ -1844,7 +1846,38 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 640px) {
+    .main-bg-banner {
+        clip-path: unset;
+    }
+
+    #work {
+        clip-path: unset;
+        margin-top: -131px;
+        padding: 338px 0 100px 0;
+    }
+
+    #skill {
+        clip-path: unset;
+    }
+
+    #team {
+        margin-top: -100%;
+        padding: 519px 0 258px 0;
+        clip-path: unset;
+    }
+
+        #team .media-team-ml {
+            margin-left: 36%;
+        }
+
+    #footer-section {
+        clip-path: unset;
+    }
+}
+
+
+@media screen and (max-width: 415px) {
     #home .navbar {
         padding: 13px;
     }
@@ -1885,7 +1918,8 @@ button:focus {
     }
 
     #work {
-        padding: 156px 0 100px 0;
+        margin-top: -161px;
+        padding: 338px 0 100px 0;
     }
 
         #work .media-borders {
@@ -1987,7 +2021,11 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 412px) {
+    .sleep {
+        padding: 15px 10px 15px 10px;
+    }
+
     #work .media-borders {
         top: -16% !important;
     }
@@ -1998,7 +2036,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     #work .top-border {
         top: -264px;
         left: 42.2%;
@@ -2015,9 +2053,13 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
     #home .navbar {
         padding: 13px;
+    }
+
+    .sleep {
+        padding: 15px 10px 15px 10px;
     }
 
     .media-logo-width {
@@ -2065,7 +2107,7 @@ button:focus {
     }
 
     #work {
-        padding: 156px 0 100px 0;
+        padding: 309px 0 100px 0;
     }
 
         #work .media-borders {
@@ -2229,9 +2271,13 @@ button:focus {
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 }
 
-@media screen and (max-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 824px) and (orientation: landscape) {
     #home .navbar {
         padding: 13px;
+    }
+
+    body {
+        background-color: #f4f5f9;
     }
 
     .media-logo-width {
@@ -2261,19 +2307,23 @@ button:focus {
     }
 
     #skill {
-        padding: 0px 0 0px 0;
+        padding: 170px 0 159px 0;
     }
 
-    #work .top-border {
-        top: -264px;
-        left: 44.2%;
+    #work {
+        margin-top: -190px;
     }
 
-    #work .bottom-border {
-        right: 48.1%;
-        top: -250px;
-        transform: rotate(189deg);
-    }
+        #work .top-border {
+            top: -264px;
+            left: 44.2%;
+        }
+
+        #work .bottom-border {
+            right: 48.1%;
+            top: -250px;
+            transform: rotate(189deg);
+        }
 
     .btn-browse {
         font-size: 13px;
@@ -2332,6 +2382,10 @@ button:focus {
         margin-top: 30px;
     }
 
+    #services {
+        background-color: #ffffff;
+    }
+
     #team .top-border {
         border-right-width: 0 !important;
         border-top-width: 0px !important;
@@ -2362,7 +2416,17 @@ button:focus {
     }
 
     #team {
+        margin-top: -20%;
+        clip-path: unset;
         padding: 200px 0 90px 0;
+    }
+
+    #contact {
+        margin-top: 0;
+    }
+
+    .team-hr-line {
+        display: none;
     }
 
     .img-bg-color {
@@ -2421,7 +2485,9 @@ button:focus {
     }
 
     #footer-section {
-        padding: 50px 0px;
+        clip-path: unset;
+        margin-top: 0;
+        padding: 0px 0px;
         background-position: center;
     }
 
@@ -2449,12 +2515,19 @@ button:focus {
     .mt-140 {
         margin-top: 80px;
     }
+
+    #team .media-team-ml {
+        margin-left: 37%;
+    }
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
+    #contact {
+        padding: 14px 0 5px 0;
+    }
 }
 
-@media screen and (max-width: 736px) and (orientation: landscape) {
+@media screen and (max-width: 737px) and (orientation: landscape) {
     #home .navbar {
         padding: 13px;
     }
@@ -2504,7 +2577,8 @@ button:focus {
     }
 
     #work {
-        padding: 176px 0 176px 0;
+        clip-path: unset;
+        padding: 430px 0 176px 0;
     }
 
         #work .media-borders {
@@ -2584,6 +2658,7 @@ button:focus {
 
     #team {
         padding: 519px 0 90px 0;
+        margin-top: -60%;
     }
 
     .img-bg-color {
@@ -2676,7 +2751,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 731px) and (orientation: landscape) {
+@media screen and (max-width: 732px) and (orientation: landscape) {
     #home .navbar {
         padding: 13px;
     }
@@ -2703,9 +2778,6 @@ button:focus {
         font-size: 27px;
     }
 
-    #skill {
-        padding: 0px 0 0px 0;
-    }
 
     #work .top-border {
         top: -264px;
@@ -2726,7 +2798,7 @@ button:focus {
     }
 
     #work {
-        padding: 156px 0 100px 0;
+        padding: 356px 0 100px 0;
     }
 
         #work .media-borders {
@@ -2890,7 +2962,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
     #home .navbar {
         padding: 13px;
     }
@@ -2940,7 +3012,7 @@ button:focus {
     }
 
     #work {
-        padding: 190px 0 185px 0;
+        padding: 386px 0 100px 0;
     }
 
         #work .media-borders {
@@ -3096,7 +3168,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
     #home .navbar {
         padding: 13px;
     }
@@ -3146,7 +3218,7 @@ button:focus {
     }
 
     #work {
-        padding: 156px 0 100px 0;
+        padding: 386px 0 100px 0;
     }
 
         #work .media-borders {
